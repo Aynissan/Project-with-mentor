@@ -1,5 +1,16 @@
 // ? АПИ Для запросов
 let API = "http://localhost:8000/posts";
+let API_USERS = " http://localhost:8000/users";
+
+// ? Registration + Auth
+
+let username = document.querySelector("#username");
+let password = document.querySelector("#password");
+let submit = document.querySelector("#submit");
+// let usernameSignIn = document.querySelector("#usernameSignIn");
+// let passwordSignIn = document.querySelector("#passwordSignIn");
+
+// ? CRUD
 
 let inp = document.querySelector(".inp");
 let title = document.querySelector("#title");
@@ -28,6 +39,46 @@ let searchInp = document.querySelector("#search");
 let searchVal = "";
 // ? блок куда добавятся карточки из функции render
 let list = document.querySelector("#products-list");
+
+// !Registration
+
+submit.addEventListener("click", async () => {
+  let obj = {
+    username: username.value,
+    password: password.value,
+  };
+
+  if (!obj.username.trim() || !obj.password.trim()) {
+    alert("Fill the form field");
+    return;
+  }
+  console.log(obj);
+  await fetch(API_USERS, {
+    method: "POST",
+    body: JSON.stringify(obj),
+    headers: { "Content-type": "application/json" },
+  }).then(() => alert("GOOD JOB"));
+  username.value = "";
+  password.value = "";
+});
+
+// // ! Authorization
+// submit.addEventListener("click", async () => {
+//   let obj = {
+//     usernameSignIn: usernameSignIn.value,
+//     passwordSignIn: passwordSignIn.value,
+//   };
+//   if (!obj.usernameSignIn.trim() || !obj.passwordSignIn.trim()) {
+//     alert("Fill the form field");
+//     return;
+//   }
+//   await fetch(API_USERS, {
+//     method: "GET",
+//     body: JSON.stringify(obj),
+//     headers: { "Content-type": "application/json" },
+//   }).then((res) => res.json());
+//   res.forEach(() => {});
+// });
 
 // ! ADD - Обработчик событий на добавление
 btnAdd.addEventListener("click", async function () {

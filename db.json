@@ -34,34 +34,33 @@
       "descr": "dmks",
       "image": "https://ae01.alicdn.com/kf/Sbe9cbfc786614b12820f28f7425eb6856/Dog-Sunglasses-Cat-Lovely-Vintage-Round-Reflection-Eye-Wear-Glasses-For-Small-Dog-Cat-Pet-Photos.jpg_Q90.jpg_.webp",
       "id": 11
+    }
+  ],
+  "users": [
+    {
+      "username": "FFGB",
+      "password": "GGFG",
+      "id": 1
     },
     {
-      "title": "vmkdfml",
-      "price": "mfdmfl,",
-      "descr": "fd,m,",
-      "image": "fmd,mf",
-      "id": 12
+      "username": "FFGB",
+      "password": "GGFG",
+      "id": 2
     },
     {
-      "title": "fdmkmf",
-      "price": "fmdlm",
-      "descr": "fd ,f",
-      "image": "fdkmf",
-      "id": 13
+      "username": "FFGB",
+      "password": "dksld,l",
+      "id": 3
     },
     {
-      "title": "bjkb",
-      "price": "bhbhb",
-      "descr": "hjj",
-      "image": "ghh",
-      "id": 14
+      "username": "aynissan",
+      "password": "hello",
+      "id": 4
     },
     {
-      "title": "нт6л5",
-      "price": "6ь5",
-      "descr": "л65лд",
-      "image": "https://ae01.alicdn.com/kf/Sbe9cbfc786614b12820f28f7425eb6856/Dog-Sunglasses-Cat-Lovely-Vintage-Round-Reflection-Eye-Wear-Glasses-For-Small-Dog-Cat-Pet-Photos.jpg_Q90.jpg_.webp",
-      "id": 15
+      "username": "azim",
+      "password": "1234",
+      "id": 5
     }
   ]
 }
